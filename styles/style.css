@@ -1,0 +1,249 @@
+body{
+	background-color:white;
+	background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+	linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+	background-size:50px 50px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323');
+
+.simon-container{
+	border:1px solid #2A2C2B;
+	width:500px;
+	height:500px;
+	border-radius: 50%;
+	padding:0;
+	position:relative;
+	margin-top:100px;
+	box-shadow: 0 0 15px #374140;
+	text-align: center;
+}
+
+.controller-container{
+	border:15px solid #2A2C2B;
+	height:250px;
+	width:250px;
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	
+	z-index:2;
+	margin:-125px 0 0 -125px;
+	background-color:#ECE7EE;	
+}
+
+.header{
+	font-family: 'Alfa Slab One', cursive;
+	font-size:45px;
+	margin-top:30px;
+}
+
+.inner-circle {
+  border: 15px solid #2A2C2B;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background-color: #D9CB9E;
+  margin: -125px 0 0 -125px;
+}
+
+/* Remove the default padding and margin from rows and columns
+to make the shadow of the container match with the panels */
+.row, .col-xs-6{
+	padding:0;
+	margin:0;
+}
+
+.corner-panel{
+	z-index:1;
+	border:15px solid #2A2C2B;
+	
+}
+
+.top-left{
+	border-top-left-radius: 100%;
+	height:250px;
+	width:250px;
+	background-color:#0BAA13;
+}
+
+.top-right{
+	border-top-right-radius: 100%;
+	height:250px;
+	width:250px;
+	background-color: #FB241D;
+}
+
+.bottom-left{
+	border-bottom-left-radius: 100%;
+	height:250px;
+	width: 250px;
+	top:45%;
+	background-color:#FFFF00;
+}
+
+.bottom-right{
+	border-bottom-right-radius: 100%;
+	height:250px;
+	width:250px;
+	top:45%;
+	background-color:#038CD7;
+}
+
+#display{
+	font-family: 'VT323', monospace;
+	height:35px;
+	width: 50px;
+	border:4px solid #222;
+	border-radius:10px;
+	background-color:#32050c;
+	box-shadow: 0 0 6px #2A2C2B;
+}
+
+#display-text{
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 0;
+	font-size: 1.5em;
+	color: #DC0D29;
+	
+}
+
+.control-buttons{
+	height:30px;
+	width:30px;
+	border-radius: 50%;
+	border:4px solid #444;
+	box-shadow: 0 2px 3px #222;
+	outline:none;
+}
+
+#start{
+	background-color: #FB241D;
+}
+
+#strict{
+	background-color:#FFFF00;
+}
+
+#strict-light{
+	margin:-5px 0 10px 0;
+	margin-left: 80%;
+	height:12px;
+	width: 12px;
+	border-radius: 50%;
+	border:2px solid #2A2C2B;
+	background-color:#32050c;
+}
+
+.strict-click{
+	background-color:#CB1431 !important;
+}
+
+.switch{
+	border:2px solid #333;
+	border-radius:4px;
+	width:40px;
+	height:20px;
+	outline:none;
+	background:-webkit-linear-gradient(right,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+	background:-o-linear-gradient(left,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+	background:-moz-linear-gradient(left,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+	background:linear-gradient(to left,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+}
+
+.switch-click{
+	background:-webkit-linear-gradient(left,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+	background:-o-linear-gradient(right,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+	background:-moz-linear-gradient(right,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+	background:linear-gradient(to right,
+		#3193DE 0%,
+		#3193DE 50%,
+		#222 50%,
+		#222 100%
+	);
+}
+
+.on-off .col-xs-4{
+	padding: 0;
+	margin:0;
+}
+
+#on{
+	text-align: right;
+}
+
+#off{
+	text-align: left;
+}
+
+
+/*	Animations and Effects */
+.corner-panel:hover{
+	box-shadow: 0 0 24px inset;
+	cursor: pointer;
+
+}
+
+.aiClick{
+	box-shadow: 0 0 24px inset;
+}
+
+
+.yellow-light{
+  background-color : #fed93f;
+}
+
+.blue-light{
+  background-color : #1c8cff;
+}
+
+.red-light{
+  background-color : #ff4c4c;
+}
+
+.green-light{
+  background-color : #13ff7c;
+}
+
+/* add hover effect class for when ai taps the panels */	
