@@ -11,7 +11,7 @@
 		<script src="https://use.fontawesome.com/faecb25be0.js"></script>
 		<link href="styles/style.css" rel="stylesheet"/>
 		<!-- Insert font here -->
-		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto|VT323" rel="stylesheet">
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="styles/media/favicon/apple-icon-57x57.png">
@@ -33,6 +33,35 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
+
+	<div class="modal fade" id="instructions-modal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Rules for the Game:</h4>
+					</div>
+
+					<div class="modal-body">
+						<div class="tab-content">
+							<div class="ruleslist">
+								<p>1. Start the game</p>
+								<p>2. Repeat the sequence of button presses the game generates</p>
+								<p>3. If you complete 20 rounds then you win</p>
+								<p> Notes: </p>
+							</div>
+							<div class="rules">
+								<p>Strict Mode only gives you one chance to complete the round</p>
+								<p>The game speeds up at levels 5, 9 and 13</p>
+								<p>There is a time limit. If you don't enter your answer within a specified amount of time, you lose that round</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="simon-container container">
 				<div class="row">
 					<div class="col-xs-6">
@@ -85,6 +114,9 @@
 					</div>
 				</div>
 		</div>
+
+
+		<div id="instructions"><p>Instructions</p></div>
 
 
 

@@ -166,5 +166,15 @@ var UI = {
 			var $this = $('#strict-light');
 			$this.removeClass('strict-click');
 		}
+	},
+
+	initModalUI : function modalUI(){
+		this.showInstructions = function showInstructions(){
+			$('#instructions-modal').modal("show");
+		}
+
+		this.hideInstructions = function hideInstructions(){
+			$('#instructions-modal').modal("hide");
+		}
 	}
 }

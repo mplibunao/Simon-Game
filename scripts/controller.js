@@ -135,53 +135,17 @@ $('.corner-panel').on('click', function(){
 
 			}
 		}
-
-
-
-
-
-
-
-
-		/*
-		//	When user has inputed the same number of colors as the AI, compare the results
-		var stepsCount = globals.game.getStepsCount();
-		if ( stepsCount === userMoves.length){
-
-			var result = globals.game.checkUserMove();
-			
-			//	If correct Increment steps count and let the ai move again
-			if (result === true){
-
-				// Add short timeout before making the AI Move again to not overlap wtih user
-				setTimeout(function(){
-					globals.game.incrementStepCount();
-					globals.game.aiMove();
-				},2000);
-
-			} else {
-
-				//	Result === False
-				globals.ui.incorrectPattern();
-
-				//	Repeat AI Move if strict-mode is disabled
-				if (!globals.game.strict){
-
-					globals.game.aiMove();
-
-				} else{		// Restart from step 1
-
-
-					initGameObjects();
-				}
-			}
-		}
-		*/
 	}
 
 });
 
+$('#instructions').on('click', function(){
+	globals.ui.showInstructions();
+});
 
+$('.close').on('click', function(){
+	globals.ui.hideInstructions();
+});
 
 
 // Initialize Object during initial page load
@@ -199,6 +163,7 @@ $(document).ready(function(){
 	globals.ui.initDisplayUI();
 	globals.ui.initCornerPanelsUI();
 	globals.ui.initStrictModeUI();
+	globals.ui.initModalUI();
 
 
 });
