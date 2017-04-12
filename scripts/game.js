@@ -88,8 +88,6 @@ var Game = {
 				AIDelay = 600;
 			}
 
-			console.log(AIDelay);
-
 		}
 
 		/*
@@ -340,17 +338,12 @@ var Game = {
 	initSounds : function initSounds(){
 
 		/*
-		*	Initializing Private variables for audio and their loop settings
+		*	Initializing Private variables for audio
 		*/
-		var green = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
-		var red = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
-		var yellow = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
-		var blue = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
-
-		//green.loop = true;
-		//red.loop = true;
-		//yellow.loop = true;
-		//blue.loop = true;
+		var green = new Audio('styles/media/simonSound1.mp3');
+		var red = new Audio('styles/media/simonSound2.mp3');
+		var yellow = new Audio('styles/media/simonSound3.mp3');
+		var blue = new Audio('styles/media/simonSound4.mp3');
 
 		/*
 		*	Public Function that Plays the sound for the specified color
